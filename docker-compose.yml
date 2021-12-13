@@ -1,0 +1,11 @@
+version: '2'
+services:
+  principles_of_data_science:
+    container_name: principles_of_data_science
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/principles_of_data_science
+    ports:
+      - '8888:8888'
